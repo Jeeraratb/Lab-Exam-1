@@ -91,14 +91,14 @@ with tab2:
                x = x,
                y =  evaluations.loc['Random Forest']),
         px.Bar(name = 'KNN',
-               x = x,
-               y =  evaluations.loc['KNN']),
-        px.Bar(name = 'AdaBoost',
-               x = x,
-               y =  evaluations.loc['AdaBoost']),
-        px.Bar(name = 'XGBoost',
-               x = x,
-               y =  evaluations.loc['XGBoost'])
+               x = x,
+               y =  evaluations.loc['KNN']),
+        px.Bar(name = 'AdaBoost',
+               x = x,
+               y =  evaluations.loc['AdaBoost']),
+        px.Bar(name = 'XGBoost',
+               x = x,
+               y =  evaluations.loc['XGBoost'])
         
     ])
     st.plotly_chart(fig, use_container_width=True)
